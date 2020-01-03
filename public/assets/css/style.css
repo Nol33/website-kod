@@ -1,0 +1,312 @@
+
+@font-face {
+    font-family: "Kiona-Regular";
+    src: url("../fonts/Kiona-Regular.ttf");
+    
+}
+
+@font-face {
+    font-family: "GeosansLight";
+    src: url("../fonts/GeosansLight.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    position: relative;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+.header {
+    background: white;
+    color: black;
+    height: 70px;
+    font-family: 'Kiona-Regular';
+    width: 100%;
+    z-index: 99;
+    opacity: 0;
+  }
+
+.header2 {
+    background: white;
+    height: 70px;
+    font-family: 'Kiona-Regular';
+    width: 100%;
+    z-index: 99;
+}
+
+
+#logo-home{
+    width: 30%;
+}
+
+
+  .sticky-top{
+      position: fixed;
+      top:0;
+  }
+
+#myHeader ul {
+	display: flex;
+	align-items: center;
+    justify-content: space-around;
+}
+
+#myHeader2 ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+li {
+	list-style: none;
+    font-size: 18px;
+    margin: 10px;
+    padding: 10px;
+    font-weight: bolder;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#picto{
+    width: 5%;
+    display: block;
+}
+
+#accueil{
+    width: 8%;
+    display: block;
+}
+
+.paralax {
+    background: url("../img/canyon.jpg")fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.blanc {
+    height: 100vh;
+    background-color: white;
+    position: relative;
+    opacity: 1;
+    transition: 1s opacity;
+}
+
+
+
+.darrow {
+    box-sizing: border-box;
+    height: 5vw;
+    width: 5vw;
+    border-style: solid;
+    border-width: 0px 10px 10px 0px;
+    transform: rotate(45deg);
+    transition: border-width 150ms ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+}
+
+.darrow:hover {
+    border-bottom-width: 4px;
+    border-right-width: 4px;
+}
+
+
+.blanc-poli {
+    margin-top: 95vh;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 100%;
+    display: flex;
+}
+
+.citation > h1{
+    width: 900px;
+    color:white;
+    font-weight: bold;
+    font-size: 50px;
+    display: flex;
+    font-family: 'Kiona-Regular';
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}   
+
+.citation > h3{
+    width: 900px;
+    color:white;
+    font-weight: bold;
+    font-size: 30px;
+    display: flex;
+    font-family: 'Kiona-Regular';
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.blanc,
+.blanc-poli,
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.blanc-packs {
+    background-color: white;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.titre-packs{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Kiona-Regular';
+    font-weight: bolder;
+}
+
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin: auto;
+    list-style: none;
+}
+
+.flex-item {
+    padding: 5px;
+    width: 300px;
+    height: 300px;
+    margin: 100px 15px 0 15px;
+    text-align: justify;
+    align-items: center;
+}
+
+
+.img-finlande {
+    width: 280px;
+    height: 280px;
+}
+
+.img-suede {
+    width: 280px;
+    height: 280px;
+}
+
+.img-norvege {
+    width: 280px;
+    height: 280px;
+}
+
+.img-danemark {
+    width: 280px;
+    height: 280px;
+}
+
+h3 {
+    font-size: 20px;
+    width: 280px;
+    text-align: center;
+    padding: 10px;
+    font-family: "Kiona-Regular";
+    font-weight: bolder;
+}
+
+p {
+    font-size: 16px;
+    width: 280px;
+    text-align: justify;
+    font-family: "GeosansLight";
+}
+
+#footer-home {
+    height: 100px;
+    display: flex;
+}
+
+#footer{
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: dimgrey;
+
+}
+
+.reseaux {
+   justify-content: flex-end;
+    align-items: center;
+    width: 10px;
+}
+
+.logo-footer {
+    justify-content: left;
+    align-items: center;
+}
+
+.logo-footer2 {
+    justify-content: center;
+    align-items: center;
+}
+
+.img-logo-footer{
+    justify-content: left;
+    width: 100px;
+    height: 60px;
+}
+
+
+/*************** PAGE DANEMARK *****************/
+
+.pays {
+width: 900px;
+display: flex;
+font-family: 'Kiona-Regular';
+justify-content: center;
+align-items: center;
+text-align: justify;
+flex-direction: column ;
+}
+
+.img-danemark_ileaero {
+    width: 280px;
+    height: 280px;
+}
+
+.img-copenhague{
+    width: 400px;
+    height: 400px;
+}
+
+.img-danemark_nature{
+    width: 400px;
+    height: 400px;
+}
+
+
+
