@@ -6,41 +6,44 @@
 
 
 
-    <!-- MAIN -->
+    <!-------------- MAIN ------------------>
+
     <article>
-        <div class="pays">
-        <h2>LE DANEMARK</h2>
-             <p>Le plus petit des pays scandinaves (si l'on met de côté le Groenland et les îles Féroé). Ce pays légendaire est bordé par la mer Baltique et la mer du Nord. Il est composé d'une péninsule (Jylland) et de 443 îles, dont 72 habitées. Ce pays est relativement plat et le climat tempéré avec des étés doux et des hivers frais. Découvrez le pays de Hans Christian Andersen, Kierkegaard et Karen Blixen. Faites votre choix entre les régions de Copenhague, Sjaelland, Jutland et la Fionie. Les plages y sont propres, les forêts profondes et la quiétude de la campagne danoise saura vous dépayser... Bon voyage !
-             </p>
-        <div class="img-danemark_ileaero">
+        <div class="titre">
+            <h1>LE DANEMARK</h1>
+        </div>
+
+        <div class="descr_pays">
+            <div class="titre">
+                <p>Le plus petit des pays scandinaves (si l'on met de côté le Groenland et les îles Féroé). Ce pays légendaire est bordé par la mer Baltique et la mer du Nord. Il est composé d'une péninsule (Jylland) et de 443 îles, dont 72 habitées. Ce pays est relativement plat et le climat tempéré avec des étés doux et des hivers frais. Découvrez le pays de Hans Christian Andersen, Kierkegaard et Karen Blixen. Faites votre choix entre les régions de Copenhague, Sjaelland, Jutland et la Fionie. Les plages y sont propres, les forêts profondes et la quiétude de la campagne danoise saura vous dépayser... Bon voyage !
+                </p>
+            </div>
+
+            <div class="img-danemark_ileaero">
             <img class="img-fluid" src="{{ asset('assets/img/danemark_ileaero.jpg') }}">
+            </div>
         </div>
-        </div>
 
 
-    <div class="packs-danemark">
-
-        <div class="flex-container">
-
-            <div class="flex-item">
+        <div class="packs">
+            <div class="city">
                 <a href="{{ path('danemark_city') }}">
-                <img src="{{ asset('assets/img/copenhague.jpg') }}" class="img-copenhague" class="img-fluid" alt="">
+                    <img src="{{ asset('assets/img/copenhague.jpg') }}" class="img-copenhague" class="img-fluid" alt="Copenhague">
                 </a>
                 <h3>CITY</h3>
                 <p> La Finlande, c'est le pays des lacs, un véritable dédale de cours d'eau s'écoulant paisiblement au coeur d'une nature grandiose. Il semble y avoir plus d'eau que de terre.
                 </p>
             </div>
 
-            <div class="flex-item">
+            <div class="nature">
                 <a href="{{ path('danemark_nature') }}">
-                <img src="{{ asset('assets/img/danemark_nature.jpg') }}" class="img-danemark_nature" alt="">
+                <img src="{{ asset('assets/img/danemark_nature.jpg') }}" class="img-danemark_nature" class="img-fluid" alt="DanemarkNature">
                 </a>
                 <h3>NATURE</h3>
                 <p> Entre forêts et lacs paisibles, petits villages de pêcheurs et majestueux châteaux sans oublier de charmants chalets rouges sur pilotis, la Suède a tous les atouts pour vous séduire.
                 </p>
             </div>
         </div>
-    </div>
     </article>
 
 

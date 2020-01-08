@@ -12,10 +12,10 @@
 <body>
 <!--HEADER -->
 <header>
-    <div class="header2" id="myHeader2">
+    <div class="header_pages" id="myHeader_pages">
         <ul>
             <li>
-                <a href="accueil" id="accueil">
+                <a href="{{ path('home') }}" id="accueil">
                     <img class="img-fluid" src="{{ asset('assets/img/kodnoir.png') }}">
                 </a>
             </li>
@@ -23,7 +23,7 @@
                 <a href="{{ path('concept') }}">LE CONCEPT</a>
             </li>
             <li>
-                <a href="packs">PACKS</a>
+                <a href="{{ path('home') }}" id="packs">PACKS</a>
             </li>
             <a href="#" id="picto">
                 <img class="img-fluid" src="{{ asset('assets/img/picto-compte.png') }}">

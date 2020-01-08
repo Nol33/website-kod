@@ -34,7 +34,7 @@ class Pack
     private $duree;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Pays")
+     * @ORM\ManyToOne(targetEntity="App\Entity\Pays", inversedBy="pack")
      * @ORM\JoinColumn(nullable=false)
      */
     private $pays;
@@ -83,12 +83,12 @@ class Pack
         return $this;
     }
 
-    public function getDuree(): ?\DateTimeInterface
+    public function getDuree(): ?string
     {
         return $this->duree;
     }
 
-    public function setDuree(\DateTimeInterface $duree): self
+    public function setDuree(string $duree): self
     {
         $this->duree = $duree;
 

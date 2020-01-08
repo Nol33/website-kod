@@ -3,8 +3,10 @@
 // Représente l'architecture pour aller à la classe
 namespace App\Controller;
 
+use App\Repository\PaysRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
+use Doctrine\ORM\EntityManagerInterface;
 
 class PaysController extends AbstractController
 {
@@ -34,15 +36,20 @@ class PaysController extends AbstractController
      */
     public function concept()
     {
-
-        //j'utilise le productRepostory et la methode find() pour trouver un produit
-        // en fonction de son id
-
-
-
-
         return $this->render('concept.html.twig', [
-
         ]);
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

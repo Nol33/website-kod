@@ -2,19 +2,61 @@
 
 {% block content %}
 
-
-
-
-
     <!-- MAIN -->
     <article>
 
-        <h2>LE DANEMARK CITY</h2>
+        <div class="titre">
+            <h1>DANEMARK CITY</h1>
+        </div>
 
+    <div class="bloc-voyage">
+        <div class="texte-voyage">
+
+            <ul>
+            <li>Ce séjour comprend :</li>
+            <li>Votre hébergement au sein de l'hôtel Copenhagen Admiral Hotel</li>
+            <li>Votre voyage</li>
+            <li>Vos transferts</li>
+            </ul>
+        </p>
+        </div>
+
+        <form class= "formulaire" method="post" action="{{ path('danemark_city') }}">
+            <div class="duree_sejour">
+                <label for="list_choix_jours">Durée du séjour</label>
+                <select id="list_choix_jours">
+                    <option value="3">3 jours</option>
+                    <option value="7">7 jours</option>
+                    <option value="10">10 jours</option>
+                </select>
+            </div>
+
+            <div class="nb_pers">
+                <label for="list_choix_pers">Durée du séjour</label>
+                <select id="list_choix_pers">
+                    <option value="1">1 personne</option>
+                    <option value="2">2 personnes</option>
+                    <option value="3">3 personnes</option>
+                    <option value="4">4 personnes</option>
+                </select>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div>
+                <input type="submit">
+            </div>
+        </form>
+
+        <div class="img-copenhague">
+            <img src="{{ asset('assets/img/copenhague.jpg') }}" class="img-copenhague" class="img-fluid" alt="Copenhague">
+        </div>
+    </div>
     </article>
 
-
-
-
-
 {% endblock %}
+
+
+
+
+

@@ -15,7 +15,7 @@
         <div class="header" id="myHeader">
             <ul>
                 <li>
-                    <a href="accueil" id="accueil">
+                    <a href="{{ path('home') }}" id="accueil">
                         <img class="img-fluid" src="{{ asset('assets/img/kodnoir.png') }}">
                     </a>
                 </li>
@@ -23,7 +23,7 @@
                     <a href="{{ path('concept') }}">LE CONCEPT</a>
                 </li>
                 <li>
-                    <a href="packs">PACKS</a>
+                    <a href="#packs">PACKS</a>
                 </li>
                 <a href="#" id="picto">
                     <img class="img-fluid" src="{{ asset('assets/img/picto-compte.png') }}">
@@ -43,10 +43,12 @@
 
         <!-- BLOC PACKS PAYS -->
         <div class="blanc-packs">
-            <div class="titre-packs">
+            <div class="titre-packs" id="packs">
                 <h1>Envie d'évasion ...</h1>
-                <br><br>
-                <p>Il y a forcément une destination pour vous, choisissez votre pack</p>
+            </div>
+
+            <div class="soustitre-packs">
+                <h2>Il y a forcément une destination pour vous, choisissez votre pack</h2>
             </div>
 
             <ul class="flex-container">
@@ -56,6 +58,7 @@
                     <h3>FINLANDE</h3>
                     <p> La Finlande, c'est le pays des lacs, un véritable dédale de cours d'eau s'écoulant paisiblement au coeur d'une nature grandiose. Il semble y avoir plus d'eau que de terre.
                     </p>
+                    </a>
                 </li>
 
                 <li class="flex-item">
@@ -64,6 +67,7 @@
                     <h3>SUEDE</h3>
                     <p> Entre forêts et lacs paisibles, petits villages de pêcheurs et majestueux châteaux sans oublier de charmants chalets rouges sur pilotis, la Suède a tous les atouts pour vous séduire.
                     </p>
+                    </a>
                 </li>
 
 
@@ -71,7 +75,9 @@
                     <a href="{{ path('norvege') }}">
                     <img src="{{ asset('assets/img/norvege.jpg') }}" class="img-norvege" alt="">
                     <h3>NORVEGE</h3>
-                    <p> Des fjords d'un bleu profond, des petites criques aux maisons colorées, des villes charmantes aux émouvantes églises en bois…. La Terre des vikings a mille trésors à offrir,
+                    <p> Des fjords d'un bleu profond, des petites criques aux maisons colorées, des villes charmantes aux émouvantes églises en bois…. La Terre des vikings a mille trésors à offrir.
+                    </p>
+                    </a>
                 </li>
 
                 <li class="flex-item">

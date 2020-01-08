@@ -36,6 +36,13 @@ class Pays
      */
     private $photo;
 
+    /**
+     * @ORM\OneToMany(targetEntity="App\Entity\Packs", mappedBy="pays")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $packs;
+
+
     public function getId(): ?int
     {
         return $this->id;
