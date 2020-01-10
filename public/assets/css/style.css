@@ -85,10 +85,6 @@ a  {
     color: black;
 }
 
-a a:hover {
-    text-decoration: none;
-    color: black;
-}
 
 #picto{
     width: 5%;
@@ -307,8 +303,13 @@ h3 {
 
 
 /******************************************************
-*******************PAGE DANEMARK **********************
+*******************  PAGE DANEMARK ********************
 *******************************************************/
+
+.background-danemark{
+    background-color: lightgrey;
+
+}
 
 .descr_pays {
     width: 100%;
@@ -317,71 +318,113 @@ h3 {
     text-align: justify;
     justify-content: space-evenly;
     padding-top: 60px;
-    align-items: center;
 }
 
 .descr_pays p{
     font-family: "GeosansLight";
     font-size: 18px;
-    width: 600px;
+    width: 800px;
+    align-items: center;
+
+}
+
+.danemark-txt{
     align-items: center;
 }
+
 
 .img-danemark_ileaero {
     width: 300px;
     height: 300px;
 }
 
-.img-copenhague{
-    width: 300px;
-    height: 300px;
-}
 
-.img-copenhague h3 p{
-    width: 300px;
-    height: 300px;
-}
-
-
-
-.img-danemark_nature{
-    width: 400px;
-    height: 400px;
-
-
+.titre_cityorpack{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Kiona-Regular';
+    padding-top: 30px;
+    padding-bottom: 50px;
 }
 
 .packs{
     display: flex;
     padding: 5px;
-    margin: 100px 15px 0 15px;
-    text-align: justify;
     font-size: 16px;
     font-family: "GeosansLight";
+    justify-content: center;
+}
+
+.city .nature h3 p{
+    justify-content: center;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+    font-family: "Kiona-Regular";
+    font-weight: bolder;
+}
+
+.img-copenhague{
+    width: 300px;
+    height: 300px;
+    margin-left: 80px;
+}
+
+.img-danemark_nature{
+    width: 300px;
+    height: 300px;
+}
+
+.city-txt{
+   padding: 20px;
+    align-items: center;
+    width: 600px;
+    text-align: justify;
+}
+
+.nature-txt{
+    padding: 20px;
+    align-items: center;
+    width: 600px;
+    text-align: justify;
 }
 
 /******************************************************
 *******************  PAGE DANEMARK-CITY ***************
 *******************************************************/
+.background-danemark{
+    background-color: lightgrey;
+    height: 100vh;
+}
+
 
 .bloc-voyage{
     display: flex;
     justify-content: space-evenly;
-    padding-top: 80px;
+    padding-top: 120px;
+    margin: ;
     font-family: "GeosansLight";
+    align-items: center;
 }
 
 .duree-sejour{
     font-family: "GeosansLight";
 }
 
-
+.bloc-voyage .img-copenhague{
+    margin-right: 80px;
+}
 
 /******************************************************
 *******************  PAGE CONCEPT *********************
 *******************************************************/
 
-
+.background-concept{
+   background-color: lightgrey;
+    height: 100vh;
+}
 
 .bloc-concept{
     display: flex;
@@ -398,26 +441,26 @@ h3 {
 }
 
 .concept{
-    display: inline-flex;
     justify-content: center;
     align-items: center;
+
 }
 
 h4{
     display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: "GeosansLight";
     font-size: 20px;
     color: black;
     padding: 30px;
     margin: 30px;
     text-align: justify;
+    width: 700px;
 }
 
 .arbre{
     width: 600px;
     height: 400px;
+    padding-top: 70px;
 }
 
 
@@ -431,11 +474,25 @@ h4{
 *******************************************************/
 .tableau{
     font-family: "GeosansLight";
+    margin-bottom: 40px;
 }
 .table{
     color: black;
     text-align: justify;
     align-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+
+}
+
+.table td, th{
+    text-align: justify;
+    height: 50px;
+    font-size: 16px;
+    padding-bottom: 10px;
+    border: 1px solid grey;
+    padding: 10px;
 }
 
 .button-show {
@@ -450,10 +507,10 @@ h4{
     color: white;
 }
 
-.button-edit {
+.button-update {
     border-top: 1px solid;
     background: #565656;
-    padding: 3px 15px;
+    padding: 3px 12px;
     border-radius: 40px;
     font-size: 14px;
     font-family: "GeosansLight";
@@ -472,6 +529,8 @@ h4{
     text-decoration: none;
     vertical-align: middle;
     color: white;
+    margin: 30px;
+
 }
 
 .button-back{

@@ -34,10 +34,15 @@ class Pack
     private $duree;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Pays", inversedBy="pack")
-     * @ORM\JoinColumn(nullable=false)
+     * @ORM\OneToOne(targetEntity="App\Entity\Pays", inversedBy="pack")
      */
     private $pays;
+
+    public function __construct()
+    {
+        $this->pays = new ArrayCollection();
+        $this->type = new ArrayCollection();
+    }
 
     /**
      * @ORM\OneToMany(targetEntity="App\Entity\Type", mappedBy="pack")
@@ -49,10 +54,6 @@ class Pack
      */
     private $Nb_personnes;
 
-    public function __construct()
-    {
-        $this->type = new ArrayCollection();
-    }
 
     public function getId(): ?int
     {
@@ -95,17 +96,6 @@ class Pack
         return $this;
     }
 
-    public function getPays(): ?Pays
-    {
-        return $this->pays;
-    }
-
-    public function setPays(?Pays $pays): self
-    {
-        $this->pays = $pays;
-
-        return $this;
-    }
 
     /**
      * @return Collection|Type[]
@@ -138,6 +128,42 @@ class Pack
         return $this;
     }
 
+
+
+
+
+
+    /**
+     * @return Collection|Pays[]
+     */
+    public function getPays(): Collection
+    {
+        return $this->pays;
+    }
+
+    public function addPays(Pays $pays): self
+    {
+        if (!$this->pays->contains($pays)) {
+            $this->pays[] = $pays;
+            $pays->setPack($this);
+        }
+
+        return $this;
+    }
+
+    public function removePays(Pays $pays): self
+    {
+        if ($this->pays->contains($pays)) {
+            $this->pays->removeElement($pays);
+            // set the owning side to null (unless already changed)
+            if ($pays->getPack() === $this) {
+                $pays->setPack(null);
+            }
+        }
+
+        return $this;
+    }
+
     public function getNbPersonnes(): ?int
     {
         return $this->Nb_personnes;
@@ -149,4 +175,6 @@ class Pack
 
         return $this;
     }
+
+
 }

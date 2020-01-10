@@ -37,7 +37,7 @@ class Pays
     private $photo;
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\Packs", mappedBy="pays")
+     * @ORM\OneToMany(targetEntity="App\Entity\Pack", mappedBy="pays")
      * @ORM\JoinColumn(nullable=false)
      */
     private $packs;
@@ -95,4 +95,23 @@ class Pays
 
         return $this;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getPack()
+    {
+        return $this->packs;
+    }
+
+    /**
+     * @param mixed $packs
+     */
+    public function setPack($packs): void
+    {
+        $this->packs = $packs;
+    }
+
+
+
 }
