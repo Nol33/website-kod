@@ -34,7 +34,7 @@ class Pack
     private $duree;
 
     /**
-     * @ORM\OneToOne(targetEntity="App\Entity\Pays", inversedBy="pack")
+     * @ORM\ManyToOne(targetEntity="App\Entity\Pays", inversedBy="pack")
      */
     private $pays;
 
@@ -129,40 +129,27 @@ class Pack
     }
 
 
-
-
-
-
-    /**
-     * @return Collection|Pays[]
-     */
-    public function getPays(): Collection
+    public function getPays()
     {
         return $this->pays;
     }
 
-    public function addPays(Pays $pays): self
-    {
-        if (!$this->pays->contains($pays)) {
-            $this->pays[] = $pays;
-            $pays->setPack($this);
-        }
 
-        return $this;
+    public function setPays($pays): void
+    {
+        $this->pays = $pays;
     }
 
-    public function removePays(Pays $pays): self
-    {
-        if ($this->pays->contains($pays)) {
-            $this->pays->removeElement($pays);
-            // set the owning side to null (unless already changed)
-            if ($pays->getPack() === $this) {
-                $pays->setPack(null);
-            }
-        }
 
-        return $this;
-    }
+
+
+
+
+
+
+
+
+
 
     public function getNbPersonnes(): ?int
     {
