@@ -306,36 +306,32 @@ h3 {
 *******************  PAGE DANEMARK ********************
 *******************************************************/
 
-.background-danemark{
-    background-color: lightgrey;
+.img-danemark_paysage {
+    width: 100%;
+    position: absolute;
 
 }
 
-.descr_pays {
-    width: 100%;
+.danemark-titre{
+    position: relative;
     display: flex;
     font-family: 'Kiona-Regular';
     text-align: justify;
     justify-content: space-evenly;
     padding-top: 60px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
 }
 
-.descr_pays p{
+
+.danemark-txt p{
+    display: flex;
     font-family: "GeosansLight";
     font-size: 18px;
     width: 800px;
     align-items: center;
-
-}
-
-.danemark-txt{
-    align-items: center;
-}
-
-
-.img-danemark_ileaero {
-    width: 300px;
-    height: 300px;
+    padding-bottom: 300px;
 }
 
 
@@ -355,6 +351,7 @@ h3 {
     font-size: 16px;
     font-family: "GeosansLight";
     justify-content: center;
+    padding-top: 10px;
 }
 
 .city .nature h3 p{
@@ -380,33 +377,34 @@ h3 {
 .city-txt{
    padding: 20px;
     align-items: center;
-    width: 600px;
+    width: 400px;
     text-align: justify;
 }
 
 .nature-txt{
     padding: 20px;
     align-items: center;
-    width: 600px;
+    width: 400px;
     text-align: justify;
 }
 
 /******************************************************
 *******************  PAGE DANEMARK-CITY ***************
 *******************************************************/
-.background-danemark{
-    background-color: lightgrey;
-    height: 100vh;
+
+.titre{
+    padding-bottom: 80px;
 }
 
-
 .bloc-voyage{
+    background-color: lightgrey;
+    height: 400px;
     display: flex;
     justify-content: space-evenly;
-    padding-top: 120px;
-    margin: ;
+    margin: 30px;
     font-family: "GeosansLight";
     align-items: center;
+    align-content: center;
 }
 
 .duree-sejour{
