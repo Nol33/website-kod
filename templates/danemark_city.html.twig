@@ -18,10 +18,10 @@
             <p>Votre assurance multirisque + annulation</p>
         </div>
 
-        <form class= "formulaire" method="post" action="{{ path('danemark_city') }}">
+        <form class= "formulaire" method="post" action="{{ path('danemark_city_result') }}">
             <div class="duree_sejour">
                 <label for="list_choix_jours">Durée du séjour</label>
-                <select id="list_choix_jours">
+                <select id="list_choix_jours" name="list_choix_jours">
                     <option value="3">3 jours</option>
                     <option value="7">7 jours</option>
                     <option value="10">10 jours</option>
@@ -30,16 +30,14 @@
 
             <div class="nb_pers">
                 <label for="list_choix_pers">Nombre de personnes</label>
-                <select id="list_choix_pers">
+                <select id="list_choix_pers" name="list_choix_pers">
                     <option value="1">1 personne</option>
                     <option value="2">2 personnes</option>
                     <option value="3">3 personnes</option>
                     <option value="4">4 personnes</option>
                 </select>
             </div>
-            <br>
-            <br>
-            <br>
+
             <div>
                 <input type="submit">
             </div>

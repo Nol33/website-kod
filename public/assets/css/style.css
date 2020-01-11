@@ -11,7 +11,7 @@
 }
 
 
-/*************** HOME  PAGE *****************/
+/*************** HOME PAGE *****************/
 
 
 * {
@@ -318,7 +318,7 @@ h3 {
     font-family: 'Kiona-Regular';
     text-align: justify;
     justify-content: space-evenly;
-    padding-top: 60px;
+    padding-top: 30px;
     color: white;
     font-size: 40px;
     font-weight: bold;
@@ -364,28 +364,76 @@ h3 {
 }
 
 .img-copenhague{
-    width: 300px;
-    height: 300px;
-    margin-left: 80px;
+    width: 350px;
+    height: 350px;
+    padding: 15px;
 }
 
 .img-danemark_nature{
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
+    padding: 15px;
 }
 
 .city-txt{
    padding: 20px;
-    align-items: center;
+    align-items: flex-start;
     width: 400px;
     text-align: justify;
 }
 
 .nature-txt{
     padding: 20px;
-    align-items: center;
+    align-items: flex-start;
     width: 400px;
     text-align: justify;
+}
+
+
+/******************************************************
+*******************  PAGE NORVEGE ********************
+*******************************************************/
+
+
+.img-norvege_paysage {
+    width: 100%;
+    position: absolute;
+
+}
+
+.norvege-titre{
+    position: relative;
+    display: flex;
+    font-family: 'Kiona-Regular';
+    text-align: justify;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    padding-right: 85px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+.norvege-txt p{
+    display: flex;
+    font-family: "GeosansLight";
+    font-size: 18px;
+    width: 800px;
+    align-items: center;
+    padding-bottom: 300px;
+}
+
+.img-oslo{
+    width: 350px;
+    height: 350px;
+    padding: 15px;
+}
+
+.img-norvege_nature{
+    width: 350px;
+    height: 350px;
+    padding: 15px;
 }
 
 /******************************************************
@@ -393,12 +441,12 @@ h3 {
 *******************************************************/
 
 .titre{
-    padding-bottom: 80px;
+    padding-bottom: 30px;
 }
 
 .bloc-voyage{
-    background-color: lightgrey;
-    height: 400px;
+    background-color: #f1f2f3;
+    height: 500px;
     display: flex;
     justify-content: space-evenly;
     margin: 30px;
@@ -461,15 +509,38 @@ h4{
     padding-top: 70px;
 }
 
+label{
+    font-family: "GeosansLight";
+}
 
+input{
+    font-family: "GeosansLight";
+}
 /******************************************************
 *******************  CRUD *********************
 *******************************************************/
 
 
-/******************************************************
-*******************  PAGE INDEX *********************
-*******************************************************/
+    /******************************************************
+    *******************  PAGE INDEX *********************
+    *******************************************************/
+
+.header-crud{
+    background-color: darkred;
+    font-family: "GeosansLight";
+    color: white;
+    height: 100px;
+    align-content: center;
+}
+
+.form_create{
+    margin: auto;
+    width: 500px;
+    font-family: "GeosansLight";
+    padding: ;
+
+}
+
 .tableau{
     font-family: "GeosansLight";
     margin-bottom: 40px;
@@ -541,6 +612,7 @@ h4{
     text-decoration: none;
     vertical-align: middle;
     color: white;
+
 }
 
 .btn {
@@ -553,4 +625,87 @@ h4{
     text-decoration: none;
     vertical-align: middle;
     color: white;
+}
+
+/******************************************************
+*******************  PAGE PANIER *********************
+*******************************************************/
+
+
+.panier{
+    display: flex;
+    font-family: "GeosansLight";
+    align-items: stretch;
+    align-content: flex-start;
+}
+
+.logo-kod{
+    justify-content: center;
+    width: 180px;
+    height: 100px;
+}
+
+.recap h3 p{
+    width: 600px;
+}
+
+.img-plane{
+    height: 700px;
+    width: 50%;
+    margin-right: 80px;
+}
+
+
+
+
+/******************************************************
+*******************  PAGE INSCRIPTION *********************
+*******************************************************/
+
+.register{
+    display: flex;
+
+}
+
+.inscription-form h1{
+    font-family: Kiona-Regular;
+}
+
+.inscription-form{
+    margin: auto;
+}
+
+.inscription-img{
+    height: 700px;
+    width: 50%;
+}
+
+
+/******************************************************
+*******************  PAGE LOGIN *********************
+*******************************************************/
+
+.login{
+    display: flex;
+}
+
+.login-form h1{
+    font-family: Kiona-Regular;
+}
+
+.login-form{
+    margin: auto;
+}
+
+.login-img{
+    height: 700px;
+    width: 50%;
+}
+
+.mb-3{
+    font-family: "GeosansLight";
+}
+
+.btn btn-lg btn-primary{
+    color: lightgreen;
 }
