@@ -225,6 +225,7 @@ footer {
 .flex-item p{
     text-align: justify;
     font-family: "GeosansLight";
+    width: 280px;
 }
 
 
@@ -276,6 +277,7 @@ h3 {
     left: 0;
     width: 100%;
     background-color: dimgrey;
+    display: flex;
 
 }
 
@@ -352,6 +354,7 @@ h3 {
     font-family: "GeosansLight";
     justify-content: center;
     padding-top: 10px;
+    align-items: center;
 }
 
 .city .nature h3 p{
@@ -431,6 +434,99 @@ h3 {
 }
 
 .img-norvege_nature{
+    width: 350px;
+    height: 350px;
+    padding: 15px;
+}
+
+
+/******************************************************
+*******************  PAGE SUEDE ********************
+*******************************************************/
+
+
+.img-suede_paysage {
+    width: 100%;
+    position: absolute;
+
+}
+
+.suede-titre {
+    position: relative;
+    display: flex;
+    font-family: 'Kiona-Regular';
+    text-align: justify;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    padding-right: 85px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+.suede-txt p{
+    display: flex;
+    font-family: "GeosansLight";
+    font-size: 18px;
+    width: 800px;
+    align-items: center;
+    padding-bottom: 300px;
+}
+
+.img-stockholm{
+    width: 350px;
+    height: 350px;
+    padding: 15px;
+}
+
+.img-suede_nature{
+    width: 350px;
+    height: 350px;
+    padding: 15px;
+}
+
+/******************************************************
+*******************  PAGE FINLANDE ********************
+*******************************************************/
+
+
+.img-finlande_paysage {
+    width: 100%;
+    position: absolute;
+
+}
+
+.finlande-titre {
+    position: relative;
+    display: flex;
+    font-family: 'Kiona-Regular';
+    text-align: justify;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    padding-right: 85px;
+    color: darkslategrey;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+.finlande-txt p{
+    display: flex;
+    font-family: "GeosansLight";
+    font-size: 18px;
+    width: 800px;
+    align-items: center;
+    padding-bottom: 300px;
+}
+
+.img-helsinki{
+    width: 350px;
+    height: 350px;
+    padding: 15px;
+}
+
+.img-finlande_nature{
     width: 350px;
     height: 350px;
     padding: 15px;
@@ -527,23 +623,18 @@ input{
 
 .header-crud{
     background-color: darkred;
-    font-family: "GeosansLight";
+    font-family: 'Kiona-Regular';
     color: white;
     height: 100px;
     align-content: center;
-}
-
-.form_create{
-    margin: auto;
-    width: 500px;
-    font-family: "GeosansLight";
-    padding: ;
-
+    text-align: center;
+    align-items: center;
 }
 
 .tableau{
     font-family: "GeosansLight";
     margin-bottom: 40px;
+    margin-top: 70px;
 }
 .table{
     color: black;
@@ -574,6 +665,7 @@ input{
     text-decoration: none;
     vertical-align: middle;
     color: white;
+
 }
 
 .button-update {
@@ -599,7 +691,6 @@ input{
     vertical-align: middle;
     color: white;
     margin: 30px;
-
 }
 
 .button-back{
@@ -612,7 +703,6 @@ input{
     text-decoration: none;
     vertical-align: middle;
     color: white;
-
 }
 
 .btn {
@@ -625,6 +715,57 @@ input{
     text-decoration: none;
     vertical-align: middle;
     color: white;
+    margin-top: 20px;
+}
+
+/******************************************************
+*******************  PAGE SHOW *********************
+*******************************************************/
+
+.show{
+    font-family: "GeosansLight";
+    margin-top: 100px;
+}
+
+.show h1{
+    padding-bottom: 50px;
+    font-family: 'Kiona-Regular';
+}
+
+/******************************************************
+*******************  PAGE EDIT/UPDATE *********************
+*******************************************************/
+
+.update{
+    display: flex ;
+}
+
+
+.form-update{
+    margin: auto;
+    padding-top: 100px;
+}
+
+/******************************************************
+*******************  PAGE CREATE *********************
+*******************************************************/
+
+.create{
+    font-family: "GeosansLight";
+    margin: auto;
+}
+
+.create h1{
+    padding-bottom: 50px;
+    font-family: 'Kiona-Regular';
+}
+
+.form_create{
+    margin: auto;
+    width: 500px;
+    font-family: "GeosansLight";
+    margin-top: 100px;
+
 }
 
 /******************************************************
@@ -639,14 +780,21 @@ input{
     align-content: flex-start;
 }
 
-.logo-kod{
+.logo-kod-panier{
     justify-content: center;
     width: 180px;
     height: 100px;
-}
+    margin-bottom: 40px;
 
-.recap h3 p{
+}
+.recap{
     width: 600px;
+    align-items: end;
+    align-content: end;
+    justify-content: center;
+}
+.recap h5 p{
+
 }
 
 .img-plane{
@@ -708,4 +856,21 @@ input{
 
 .btn btn-lg btn-primary{
     color: lightgreen;
+}
+
+
+/***********************************************************************************************************************
+***********************************************************************************************************************
+**************************************************  MEDIA SCREEN ******************************************************
+***********************************************************************************************************************
+***********************************************************************************************************************/
+
+
+
+
+    @media screen and (max-width:600px){
+    }
+
+    #picto{
+
 }

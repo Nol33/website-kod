@@ -65,9 +65,6 @@ if ($list_choix_jours == 3 && $list_choix_pers == 2){
             $result.=$list_choix_jours*$prix_jour;
         }
 
-
-
-
         return $this->render('panier.html.twig', [
 'result' => $result,
         ]);

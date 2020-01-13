@@ -23,13 +23,11 @@
                     <a href="{{ path('concept') }}">LE CONCEPT</a>
                 </li>
                 <li>
-                    <a href="#packs">PACKS</a>
+                    <a href="{{ path('home') }}" id="packs">PACKS</a>
                 </li>
-                <li>
-                    <a href="#" id="picto">
+                <a href="{{ path('app_register') }}" id="picto">
                     <img class="img-fluid" src="{{ asset('assets/img/picto-compte.png') }}">
-                    </a>
-                </li>
+                </a>
             </ul>
         </div>
 
@@ -84,7 +82,7 @@
 
                 <li class="flex-item">
                     <a href="{{ path('danemark') }}">
-                    <img src="{{ asset('assets/img/lukas-5Gqx11weVJI-unsplash.jpg') }}" class="img-danemark" class="img-fluid" alt="Danemark">
+                    <img src="{{ asset('assets/img/danemark.jpg') }}" class="img-danemark" class="img-fluid" alt="Danemark">
                     <h3> DANEMARK</h3>
                     <p> Le Danemark, c'est la culture viking mêlée à la féérie des contes d'Andersen ! Des villes modernes et attrayantes à arpenter en vélo et des châteaux d'une magnificence absolue !
                     </p>

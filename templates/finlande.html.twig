@@ -2,22 +2,68 @@
 
 {% block content %}
 
+    <!-------------- MAIN ------------------>
 
+    <article>
 
+        <div class="img-finlande_paysage">
+            <img class="img-fluid" src="{{ asset('assets/img/finlande-paysage.jpg') }}">
+        </div>
 
+        <div class="finlande-titre">
+            <h1>LA FINLANDE</h1>
+        </div>
 
-
-    <!-- MAIN -->
-    <article class="bloc">
-        <div class="pays">
-            <h2>LA FINLANDE</h2>
-            <p>Le plus petit des pays scandinaves (si l'on met de côté le Groenland et les îles Féroé). Ce pays légendaire est bordé par la mer Baltique et la mer du Nord. Il est composé d'une péninsule (Jylland) et de 443 îles, dont 72 habitées. Ce pays est relativement plat et le climat tempéré avec des étés doux et des hivers frais. Découvrez le pays de Hans Christian Andersen, Kierkegaard et Karen Blixen. Faites votre choix entre les régions de Copenhague, Sjaelland, Jutland et la Fionie. Les plages y sont propres, les forêts profondes et la quiétude de la campagne danoise saura vous dépayser... Bon voyage !
+        <div class="finlande-txt">
+            <p>Le plus petit des pays scandinaves (si l'on met de côté le Groenland et les îles Féroé). Ce pays
+                légendaire est bordé par la mer Baltique et la mer du Nord. Il est composé d'une péninsule (Jylland) et
+                de 443 îles, dont 72 habitées. Ce pays est relativement plat et le climat tempéré avec des étés doux et
+                des hivers frais. Découvrez le pays de Hans Christian Andersen, Kierkegaard et Karen Blixen. Faites
+                votre choix entre les régions de Copenhague, Sjaelland, Jutland et la Fionie. Les plages y sont propres,
+                les forêts profondes et la quiétude de la campagne danoise saura vous dépayser... Bon voyage !
             </p>
         </div>
-        <div class="img-danemark_ileaero">
-            <img class="img-fluid" src="{{ asset('assets/img/danemark_ileaero.jpg') }}">
+
+
+        <div class="titre_cityorpack">
+            <h1> PLUTOT CITY OU NATURE ? CHOISISSEZ VOTRE PACK !</h1>
         </div>
+        <div class="packs">
+            <div class="city-txt">
+                <h3>PACK CITY</h3>
+                <p> Partez à la découverte de Copenhague, capitale du Danemark ! Bâtie sur deux îles et sillonnée par
+                    des canaux, Copenhague est une métropole à taille humaine,
+                    qui se parcourt à pied ou à vélo, en amoureux ou en famille. C’est aussi une ville à la pointe de la
+                    modernité, où le design et l’architecture contemporaine font bon ménage avec les jardins et les
+                    palais royaux.
+                </p>
+            </div>
+
+            <div class="city">
+                <a href="{{ path('finlande_city') }}">
+                    <img src="{{ asset('assets/img/helsinki.jpeg') }}" class="img-helsinki" class="img-fluid"
+                         alt="Helsinki">
+                </a>
+            </div>
+
+            <div class="nature">
+                <a href="{{ path('finlande_nature') }}">
+                    <img src="{{ asset('assets/img/finlande-nature.jpg') }}" class="img-finlande_nature"
+                         class="img-fluid" alt="FinlandeNature">
+                </a>
+            </div>
+            <div class="nature-txt">
+                <h3>PACK NATURE</h3>
+                <p> Entre forêts et lacs paisibles, petits villages de pêcheurs et majestueux châteaux sans oublier de
+                    charmants chalets rouges sur pilotis, la Suède a tous les atouts pour vous séduire.
+                </p>
+            </div>
+
+        </div>
+
     </article>
+
+
 
 
 

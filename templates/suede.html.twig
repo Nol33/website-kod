@@ -3,35 +3,66 @@
 {% block content %}
 
 
-
-
-
     <!-- MAIN -->
     <article>
-        <div class="pays">
-            <h2>LA SUEDE</h2>
-            <p>Le plus petit des pays scandinaves (si l'on met de côté le Groenland et les îles Féroé). Ce pays légendaire est bordé par la mer Baltique et la mer du Nord. Il est composé d'une péninsule (Jylland) et de 443 îles, dont 72 habitées. Ce pays est relativement plat et le climat tempéré avec des étés doux et des hivers frais. Découvrez le pays de Hans Christian Andersen, Kierkegaard et Karen Blixen. Faites votre choix entre les régions de Copenhague, Sjaelland, Jutland et la Fionie. Les plages y sont propres, les forêts profondes et la quiétude de la campagne danoise saura vous dépayser... Bon voyage !
+
+        <div class="img-suede_paysage">
+            <img class="img-fluid" src="{{ asset('assets/img/suede-paysage.jpeg') }}">
+        </div>
+
+        <div class="norvege-titre">
+            <h1>LA SUEDE</h1>
+        </div>
+
+        <div class="suede-txt">
+            <p>Le plus petit des pays scandinaves (si l'on met de côté le Groenland et les îles Féroé). Ce pays
+                légendaire est bordé par la mer Baltique et la mer du Nord. Il est composé d'une péninsule (Jylland) et
+                de 443 îles, dont 72 habitées. Ce pays est relativement plat et le climat tempéré avec des étés doux et
+                des hivers frais. Découvrez le pays de Hans Christian Andersen, Kierkegaard et Karen Blixen. Faites
+                votre choix entre les régions de Copenhague, Sjaelland, Jutland et la Fionie. Les plages y sont propres,
+                les forêts profondes et la quiétude de la campagne danoise saura vous dépayser... Bon voyage !
             </p>
         </div>
-        <div class="img-danemark_ileaero">
-            <img class="img-fluid" src="{{ asset('assets/img/danemark_ileaero.jpg') }}">
-        </div>
-    </article>
 
-    <!-- FOOTER -->
-    <footer>
-        <div id="footer2" class="logo-footer2">
-            <img src="{{ asset('assets/img/kodblanc.png') }}" class="img-logo-footer" alt="logo-KOD">
+
+        <div class="titre_cityorpack">
+            <h1> PLUTOT CITY OU NATURE ? CHOISISSEZ VOTRE PACK !</h1>
         </div>
-        <div class="reseaux">
-            <a href="#" class="twitter">
-                <img src="">
-            </a>
-            <a href="#" class="instagram">
-                <img src="">
-            </a>
+
+        <div class="packs">
+            <div class="city-txt">
+                <h3>PACK CITY</h3>
+                <p> Partez à la découverte de Copenhague, capitale du Danemark ! Bâtie sur deux îles et sillonnée par
+                    des canaux, Copenhague est une métropole à taille humaine,
+                    qui se parcourt à pied ou à vélo, en amoureux ou en famille. C’est aussi une ville à la pointe de la
+                    modernité, où le design et l’architecture contemporaine font bon ménage avec les jardins et les
+                    palais royaux.
+                </p>
+            </div>
+
+            <div class="city">
+                <a href="{{ path('suede_city') }}">
+                    <img src="{{ asset('assets/img/stockholm.jpg') }}" class="img-stockholm" class="img-fluid"
+                         alt="Stockholm">
+                </a>
+            </div>
+
+            <div class="nature">
+                <a href="{{ path('suede_nature') }}">
+                    <img src="{{ asset('assets/img/suede-nature.jpg') }}" class="img-suede_nature"
+                         class="img-fluid" alt="SuedeNature">
+                </a>
+            </div>
+            <div class="nature-txt">
+                <h3>PACK NATURE</h3>
+                <p> Entre forêts et lacs paisibles, petits villages de pêcheurs et majestueux châteaux sans oublier de
+                    charmants chalets rouges sur pilotis, la Suède a tous les atouts pour vous séduire.
+                </p>
+            </div>
+
         </div>
-    </footer>
+
+    </article>
 
 
 {% endblock %}
