@@ -787,14 +787,20 @@ input{
     margin-bottom: 40px;
 
 }
+
 .recap{
     width: 600px;
-    align-items: end;
-    align-content: end;
+    align-items: center;
+    align-content: center;
     justify-content: center;
 }
-.recap h5 p{
+.recap h3 p ul li{
+    width: 600px;
+}
 
+.recap h3{
+    margin: 0 auto;
+    width: 600px;
 }
 
 .img-plane{
@@ -837,21 +843,28 @@ input{
     display: flex;
 }
 
-.login-form h1{
-    font-family: Kiona-Regular;
-}
-
-.login-form{
-    margin: auto;
-}
-
 .login-img{
     height: 700px;
     width: 50%;
 }
 
+.login-form{
+    font-family: "Kiona-Regular";
+    padding-left: 100px;
+    width: 700px;
+}
+
 .mb-3{
     font-family: "GeosansLight";
+    justify-content: space-evenly;
+
+}
+
+.connexion{
+    margin: auto;
+    padding-top: 120px;
+
+
 }
 
 .btn btn-lg btn-primary{

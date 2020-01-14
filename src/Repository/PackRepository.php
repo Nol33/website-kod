@@ -47,4 +47,29 @@ class PackRepository extends ServiceEntityRepository
         ;
     }
     */
+
+    public function getByAll($duree = '', $nb_personnes = '')
+    {
+
+        //le query builder permet de faire ta requete sql
+
+        $queryBuilder = $this->createQueryBuilder('o');
+
+        $query = $queryBuilder->select('o')
+            ->where('o.duree LIKE :duree')
+            ->setParameter('duree')
+            ->andWhere('o.nb_personnes LIKE :nb_personnes')
+            ->setParameter('Nb_personnes');
+
+
+        $query = $queryBuilder->getQuery();
+
+        $result = $query->getArrayResult();
+
+
+        return $result;
+    }
+
+
+
 }
