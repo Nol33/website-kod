@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="assets/img/kodnoir.png">
+    <title>{% block title %}KOD{% endblock %}</title>
+    {% block stylesheets %}{% endblock %}
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+</head>
+
+
+
+
+{% block content %}
+
+<header>
+    <div class="header-crud">
+        <h1>UPDATE PACK</h1>
+    </div>
+</header>
+
+    <div class="update">
+    <div class="form-update">
+
+    {{ include('pack/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('pack_index') }}" class="button-back">back to list</a>
+
+    {{ include('pack/_delete_form.html.twig') }}
+    </div>
+    </div>
+
+{% endblock %}

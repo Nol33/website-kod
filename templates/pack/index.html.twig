@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="assets/img/kodnoir.png">
+    <title>{% block title %}KOD{% endblock %}</title>
+    {% block stylesheets %}{% endblock %}
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+</head>
+
+
+
+{% block content %}
+
+
+
+    <header>
+        <div class="header-crud">
+            <h1>Liste des Packs</h1>
+        </div>
+    </header>
+
+    <div class="tableau">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Titre</th>
+                <th>Description</th>
+                <th>Duree</th>
+                <th>Nb_personnes</th>
+                <th>Actions</th>
+            </tr>
+
+        </thead>
+        <tbody>
+        {% for pack in packs %}
+            <tr>
+                <td>{{ pack.id }}</td>
+                <td>{{ pack.titre }}</td>
+                <td>{{ pack.description }}</td>
+                <td>{{ pack.duree }}</td>
+                <td>{{ pack.NbPersonnes }}</td>
+                <td>
+
+                    <a href="{{ path('pack_show', {'id': pack.id}) }}" class="button-show">Show</a>
+
+                    <a href="{{ path('pack_edit', {'id': pack.id}) }}" class="button-update">Update</a>
+
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="6">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('pack_new') }}" class="button-create">Create new</a>
+    </div>
+{% endblock %}

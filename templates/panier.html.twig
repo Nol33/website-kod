@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="assets/img/kodnoir.png">
+    <title>{% block title %}KOD{% endblock %}</title>
+    {% block stylesheets %}{% endblock %}
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+</head>
+
+{% block content %}
+
+
+    <article>
+        <div class="panier">
+            <div class="img-plane">
+                <img class="img-fluid" src="{{ asset('assets/img/plane.jpeg') }}">
+            </div>
+
+            <div class="recap">
+                <img class="logo-kod-panier" class="img-fluid" src="{{ asset('assets/img/kodnoir.png') }}" alt="panier">
+
+                <h3>RECAPITULATIF DE VOTRE SEJOUR</h3>
+                <p> Ce séjour comprend :</p>
+                <ul>
+                   <li>Votre hébergement au sein de l'hôtel Copenhagen Admiral Hotel</li>
+                   <li>  Votre transport A/R au départ de Paris</li>
+                   <li>  Vos transferts aéroport <-> hôtel </li>
+                   <li> </li> Votre assurance multirisque + annulation
+                </ul>
+                <div class="description_jours_panier">
+                    <h3 for="description_jours_panier">Descriptif de votre séjour :</h3>
+                    <div id="description_jours_panier" name="description_jours_panier">
+                    </div>
+                </div>
+
+                <h3> TOTAL :  {{ result }} euros</h3>
+            </div>
+        </div>
+
+
+
+    </article>
+
+
+
+{% endblock %}

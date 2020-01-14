@@ -1,0 +1,19 @@
+
+
+
+{% block content %}
+
+
+{# j'utilise la fonction form_start pour insérer la balise form #}
+{{ form_start(form) }}
+
+<div class="form">
+
+
+
+    {{ form_widget(form) }}
+    <button class="btn">{{ button_label|default('Save') }}</button>
+
+{{ form_end(form) }}
+
+{% endblock %}
