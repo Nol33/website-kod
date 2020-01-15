@@ -1,19 +1,48 @@
 
-
-
 {% block content %}
 
 
 {# j'utilise la fonction form_start pour insérer la balise form #}
-{{ form_start(form) }}
+    {{ form_start(form) }}
 
-<div class="form">
+    <div class="form">
+{# j'utilise les fonctions form_errors, form_label et form_widget
+ pour afficher respectivement les erreurs, le label et l'input pour
+ mes différents champs #}
 
+    <div class="form-case" #>
+    {{ form_errors(form.titre) }}
+    {{ form_label(form.titre) }}
+    {{ form_widget(form.titre) }}
+    </div><br>
 
+    <div class="form-case">
+    {{ form_errors(form.description) }}
+    {{ form_label(form.description) }}
+    {{ form_widget(form.description) }}
+    </div><br>
 
-    {{ form_widget(form) }}
+    <div class="form-case">
+    {{ form_errors(form.duree) }}
+    {{ form_label(form.duree) }}
+    {{ form_widget(form.duree) }}
+    </div><br>
+
+    <div class="form-case">
+    {{ form_errors(form.Nb_personnes) }}
+    {{ form_label(form.Nb_personnes) }}
+    {{ form_widget(form.Nb_personnes) }}
+    </div><br>
+
+    <div class="form-case">
+    {{ form_errors(form.pays) }}
+    {{ form_label(form.pays) }}
+    {{ form_widget(form.pays) }}
+    </div><br>
+
     <button class="btn">{{ button_label|default('Save') }}</button>
 
-{{ form_end(form) }}
-
+{# j'utilise la fonction form_end pour insérer la fermeture de la balise form #}
+    {{ form_end(form) }}
+    </div>
 {% endblock %}

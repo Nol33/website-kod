@@ -23,15 +23,26 @@
                 <img class="logo-kod-panier" class="img-fluid" src="{{ asset('assets/img/kodnoir.png') }}" alt="panier">
 
                 <h3>RECAPITULATIF DE VOTRE SEJOUR</h3>
-                <p> Ce séjour comprend :</p>
+
                 <ul>
+                    <li>Ce séjour comprend :</li>
                    <li>Votre hébergement au sein de l'hôtel Copenhagen Admiral Hotel</li>
                    <li>  Votre transport A/R au départ de Paris</li>
                    <li>  Vos transferts aéroport <-> hôtel </li>
-                   <li> </li> Votre assurance multirisque + annulation
+                    <li>
+                        {% for detail_jour in detail_jours %}
+                          {{ detail_jour.description }}
+                        {% endfor %}
+                    </li>
+                   <li>  Votre assurance multirisque + annulation </li>
                 </ul>
                 <div class="description_jours_panier">
-                    <h3 for="description_jours_panier">Descriptif de votre séjour :</h3>
+                    <h3 for="description_jours_panier"></h3>
+                    {% for pack in packs %}
+                        {% if pack.duree is same as(3) %}
+                            <p>{{ pack.description}}</p>
+                        {% endif %}
+                    {% endfor %}
                     <div id="description_jours_panier" name="description_jours_panier">
                     </div>
                 </div>

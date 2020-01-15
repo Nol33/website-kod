@@ -25,9 +25,6 @@ class DanemarkController extends AbstractController
 
     }
 
-
-
-
     /**
      * @Route("/danemark/city", name="danemark_city")
      */

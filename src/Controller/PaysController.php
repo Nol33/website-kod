@@ -16,11 +16,11 @@ class PaysController extends AbstractController
      */
 
 
-    public function home(/*PaysRepository $paysRepository*/)
+    public function home(PaysRepository $paysRepository)
     {
         // je viens chercher tous les pays de ma table pays (donc je fais une requete SQL SELECT) en utilisant la methode findAll()
         // de la classe paysRepository (qui a ete créée automatiquement par SF lors du make:entity)
-        $pays = [] /*$paysRepository->findAll()*/;
+        $pays = $paysRepository->findAll();
 
 
         return $this->render('home.html.twig', [

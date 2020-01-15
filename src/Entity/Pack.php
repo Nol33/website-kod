@@ -54,6 +54,13 @@ class Pack
      */
     private $Nb_personnes;
 
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $photo;
+
+    
+
 
     public function getId(): ?int
     {
@@ -143,14 +150,6 @@ class Pack
 
 
 
-
-
-
-
-
-
-
-
     public function getNbPersonnes(): ?int
     {
         return $this->Nb_personnes;
@@ -162,6 +161,20 @@ class Pack
 
         return $this;
     }
+
+    public function getPhoto(): ?string
+    {
+        return $this->photo;
+    }
+
+    public function setPhoto(?string $photo): self
+    {
+        $this->photo = $photo;
+
+        return $this;
+    }
+
+
 
 
 }

@@ -72,4 +72,29 @@ class PackRepository extends ServiceEntityRepository
 
 
 
+
+    public function getByDuree($duree, $titre)
+    {
+
+// Récupérer le query builder (car c'est le query builder
+// qui permet de faire la requête SQL)
+        $queryBuilder = $this->createQueryBuilder('a');
+
+// Construire la requête façon SQL, mais en PHP
+// Traduire la requête en véritable requête SQL
+
+        $query = $queryBuilder->select('a')
+            ->where('a.duree LIKE :duree')
+            ->setParameter('duree', '%'.$duree.'%')
+            ->andWhere('a.titre LIKE :titre')
+            ->setParameter('titre', '%'.$titre.'%');
+
+
+        $query = $queryBuilder->getQuery();
+// Executer la requête SQL en base de données pour récupérer la durée
+        $result = $query->getArrayResult();
+
+        return $result;
+    }
+
 }

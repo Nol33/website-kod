@@ -42,6 +42,11 @@ class Pays
      */
     private $packs;
 
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $path;
+
 
     public function getId(): ?int
     {
@@ -110,6 +115,18 @@ class Pays
     public function setPack($packs): void
     {
         $this->packs = $packs;
+    }
+
+    public function getPath(): ?string
+    {
+        return $this->path;
+    }
+
+    public function setPath(string $path): self
+    {
+        $this->path = $path;
+
+        return $this;
     }
 
 

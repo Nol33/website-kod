@@ -48,43 +48,20 @@
                 <h2>Il y a forcément une destination pour vous, choisissez votre pack</h2>
             </div>
 
+
             <ul class="flex-container">
-                <li class="flex-item">
-                    <a href="{{ path('finlande') }}">
-                    <img src="{{ asset('assets/img/finlande.jpg') }}" class="img-finlande" class="img-fluid" alt="Finlande">
-                    <h3>FINLANDE</h3>
-                    <p> La Finlande, c'est le pays des lacs, un véritable dédale de cours d'eau s'écoulant paisiblement au coeur d'une nature grandiose. Il semble y avoir plus d'eau que de terre.
-                    </p>
-                    </a>
-                </li>
 
-                <li class="flex-item">
-                    <a href="{{ path('suede') }}">
-                    <img src="{{ asset('assets/img/suede.jpg') }}" class="img-suede" class="img-fluid" alt="Suède">
-                    <h3>SUEDE</h3>
-                    <p> Entre forêts et lacs paisibles, petits villages de pêcheurs et majestueux châteaux sans oublier de charmants chalets rouges sur pilotis, la Suède a tous les atouts pour vous séduire.
-                    </p>
-                    </a>
-                </li>
+                {% for item in pays %}
 
+                    <li class="flex-item">
+                        <a href="{{ path(item.path) }}">
+                            <img src="{{ asset('assets/img') }}/{{ item.photo }}" class="img-pays-home" class="img-fluid" alt="{{ item.titre }}">
+                            <h3>{{ item.nom }}</h3>
+                            <p>{{ item.description }}</p>
+                        </a>
+                    </li>
 
-                <li class="flex-item">
-                    <a href="{{ path('norvege') }}">
-                    <img src="{{ asset('assets/img/norvege.jpg') }}" class="img-norvege" class="img-fluid" alt="Norvège">
-                    <h3>NORVEGE</h3>
-                    <p> Des fjords d'un bleu profond, des petites criques aux maisons colorées, des villes charmantes aux émouvantes églises en bois…. La Terre des vikings a mille trésors à offrir.
-                    </p>
-                    </a>
-                </li>
-
-                <li class="flex-item">
-                    <a href="{{ path('danemark') }}">
-                    <img src="{{ asset('assets/img/danemark.jpg') }}" class="img-danemark" class="img-fluid" alt="Danemark">
-                    <h3> DANEMARK</h3>
-                    <p> Le Danemark, c'est la culture viking mêlée à la féérie des contes d'Andersen ! Des villes modernes et attrayantes à arpenter en vélo et des châteaux d'une magnificence absolue !
-                    </p>
-                    </a>
-                </li>
+                {% endfor %}
             </ul>
         </div>
 
